@@ -1,0 +1,98 @@
+/* Import a professional font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f0f8ff, #e0ffff);
+}
+
+.login-form {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.login-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.login-form h2 {
+    margin-bottom: 25px;
+    color: #2f4f4f;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2f4f4f;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #2e8b57;
+    box-shadow: 0 0 5px rgba(46, 139, 87, 0.5);
+}
+
+.login-button {
+    width: 100%;
+    background-color: #556b2f;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-button:hover {
+    background-color: #6b8e23;
+    transform: scale(1.05);
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #2e8b57;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.signup-link a:hover {
+    color: #3cb371;
+    text-decoration: underline;
+}
