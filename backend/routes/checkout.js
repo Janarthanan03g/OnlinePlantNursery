@@ -4,7 +4,7 @@ const router = express.Router();
 const OrderModel = require('../models/Order');
 
 // Checkout route
-router.post('/', async (req, res) => { // Remove '/checkout' from the route definition
+router.post('/', async (req, res) => { 
   const { user, items, totalAmount } = req.body;
   try {
     // Create a new order
